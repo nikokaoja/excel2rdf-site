@@ -1,0 +1,14 @@
+site_name: Turning a vocabulary into a ontology resource
+nav:
+    - Introduction: Introduction.md
+    - Manual Workflow: ManualWorkflow.md
+    - Automatic Workflow: AutomaticWorkflow.md
+    - Tools: Tools.md
+    - Examples: Examples.md
+    - Authors: Authors.md
+    - License: License.md
+
+theme: readthedocs
+
+markdown_extensions:
+    - footnotes
