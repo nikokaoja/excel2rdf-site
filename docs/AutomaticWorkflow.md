@@ -4,7 +4,7 @@ Here we describe how you can automatize the workflow described in [Manual Workfl
 
 The provided description makes use of the following Github repository:
 
-[https://github.com/fair-data-collective/excel2rdf-template](https://github.com/fair-data-collective/excel2rdf-template)
+[https://github.com/nikokaoja/excel2rdf-template](https://github.com/nikokaoja/excel2rdf-template)
 
 which contains all necessary files and Github configuration to automatically convert and validate your Excel vocabularies.
 
@@ -12,7 +12,7 @@ Once familiar with the process, simply fork the above repository and update it p
 
 ## Structuring Gihtub repository
 
-Here we shortly describe the structure of [excel2rdf-template](https://github.com/fair-data-collective/excel2rdf-template) repository which can be used for:
+Here we shortly describe the structure of [excel2rdf-template](https://github.com/nikokaoja/excel2rdf-template) repository which can be used for:
 
 - Maintaining (and version controlling)
 - Converting and

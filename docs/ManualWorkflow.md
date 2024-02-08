@@ -31,23 +31,24 @@ Each example template contains a description of the purpose for which the templa
 Here are 3 examples you could start with to create your template.
 
 ### Example 2 from SKOS Play Convert
+
 Use the drop-down menu to choose one of the example files.
 
 ### Enhanced Metadata version of Example 2
 
-We created a generic [Enhanced Template based on SKOS Play Example 2](https://github.com/fair-data-collective/excel2rdf-template/blob/main/vocabulary.xlsx).
-We primarily enhanced the template's metadata (at the top of the file), so that your vocabulary would be well described. 
+We created a generic [Enhanced Template based on SKOS Play Example 2](https://github.com/nikokaoja/excel2rdf-template/blob/main/vocabulary.xlsx).
+We primarily enhanced the template's metadata (at the top of the file), so that your vocabulary would be well described.
 You have to replace most of the values in the header section with values appropriate to your vocabulary.
 
 Read the next subsection to learn about customizations for multiple hierarchies.
 
 ### Detailed working example
 
-The Excel file in [this directory](https://github.com/fair-data-collective/zonmw-project-admin/tree/main/ontology) contains both the Excel `.xlsx` source, 
-and the Turtle-formatted SKOS ontology that resulted. 
+The Excel file in [this directory](https://github.com/nikokaoja/zonmw-project-admin/tree/main/ontology) contains both the Excel `.xlsx` source,
+and the Turtle-formatted SKOS ontology that resulted.
 A primary improvement in this example is that the identifiers are automatically generated from the labels.
 If you want to create different identifiers you can simply override the spreadsheet's formula for generating the identifiers.
-(There are many reasons it might not be appropriate for the identifiers to be generated from the labels, 
+(There are many reasons it might not be appropriate for the identifiers to be generated from the labels,
 which we will not explore here.)
 
 You can see from this working example that theskos:broader column is empty for all the top-level terms.
@@ -83,23 +84,26 @@ so they will not be visible in the UI or in response to the classes API call.
 
 You can verify your terms are visible to the public by visiting the Classes tab and viewing the tree that's shown in that tab.
 
-You may have to wait some time before your ontology and its classes become fully visible in BioPortal. 
+You may have to wait some time before your ontology and its classes become fully visible in BioPortal.
 If the classes are not visible by several hours after submission,
 first double-check that your .ttl file is valid, as described above.
 If it is, you can get help by emailing support@bioontology.org.
 
 ## Making Private Ontology Externally Accessible
 
-If your ontology Viewing Restrictions field is set to Private, 
+If your ontology Viewing Restrictions field is set to Private,
 but you want the ontology to be visible to an external system (like the [CEDAR Workbench](https://metadatacenter.org)),
 you must explicitly give your external application or user permission to access the ontology using their own account's API key.
 To do so for the CEDAR Workbench tool, enter `cedar`, `cedar-mjd`, `cedar-test`, and `cedar-public` in the Viewing Restrictions field for those accounts.
 
 To validate that the classes are visible to CEDAR, use the command:
+
 ```
 https://data.bioontology.org/ONT_ACRONYM/classes
 ```
+
 replacing `ONT_ACRONYM` with your ontology acronym. Potentially add your API key to the call if you haven't done that so before (replace `YOUR_API_KEY` with your API key):
+
 ```
 https://data.bioontology.org/ONT_ACRONYM/classes?apikey=YOUR_API_KEY
 ```
